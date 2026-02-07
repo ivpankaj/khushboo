@@ -14,15 +14,15 @@ const AppleIcon = ({ className }: { className?: string }) => <span className={`t
 const questions: { id: keyof FaqData; label: string; type: string; placeholder: string; options?: string[]; emoji: string }[] = [
   { id: 'guessName', label: 'First up, what is my name?', type: 'text', placeholder: 'Type my name...', emoji: '🧑‍💻' },
   { id: 'guessAge', label: 'Meri age kya hai?', type: 'number', placeholder: 'Enter age...', options: ['20', '21', '22', '23', '24', '25'], emoji: '🎂' },
-  { id: 'guessColor', label: 'Mera favorite color?', type: 'text', placeholder: 'Pick a color...', options: ['Blue', 'Black', 'Red', 'Pink', 'White'], emoji: '🎨' },
+  { id: 'guessColor', label: 'Mera favorite color?', type: 'text', placeholder: 'Pick a color...', options: ['Blue', 'Black', 'Red', 'Purple', 'White'], emoji: '🎨' },
   { id: 'guessCricketer', label: 'Mera favorite cricketer?', type: 'text', placeholder: 'Name the legend...', options: ['Virat Kohli', 'MS Dhoni', 'Rohit Sharma', 'Sachin Tendulkar'], emoji: '🏏' },
   { id: 'guessFruit', label: 'Mera favorite fruit?', type: 'text', placeholder: 'Pick a fruit...', options: ['Mango', 'Apple', 'Banana', 'Grapes'], emoji: '🍇' },
-  { id: 'guessPerson', label: 'Mera favorite person?', type: 'text', placeholder: 'I think you know...', options: ['Mom', 'Dad', 'You <3', 'My Best Friend'], emoji: '💑' },
+  { id: 'guessPerson', label: 'Mera favorite person?', type: 'text', placeholder: 'I think you know...', options: ['Rohit Sharma', 'Lisa', 'You <3', 'My Best Friend'], emoji: '💑' },
   { id: 'guessLocation', label: 'Mai kaha rehta hu?', type: 'text', placeholder: 'City name...', options: ["Delhi", "Noida", "Greater Noida", "Kushinagar", "Meerut"], emoji: '📍' },
   { id: 'guessDish', label: 'Mera favorite dish?', type: 'text', placeholder: 'Yummy...', options: ['Pizza', 'Momos', 'Burger', 'Pasta'], emoji: '🥟' },
-  { id: 'guessCity', label: 'Mera favorite city?', type: 'text', placeholder: 'Divine place...', options: ['Delhi', 'Mumbai', 'Banaras', 'Goa'], emoji: '🏙️' },
-  { id: 'guessFestival', label: 'Mera favorite festival?', type: 'text', placeholder: 'Colors or Lights?', options: ['Diwali', 'Holi', 'Eid', 'Christmas'], emoji: '🎆' },
-  { id: 'guessDestination', label: 'Mai tere saath kaha jaana chahta hu?', type: 'text', placeholder: 'Dream place...', options: ['Paris', 'Goa', 'Mathura', 'Maldives'], emoji: '✈️' },
+  { id: 'guessCity', label: 'Mera favorite city?', type: 'text', placeholder: 'Divine place...', options: ['Delhi', 'Rohtak', 'Banaras', 'Mathura'], emoji: '🏙️' },
+  { id: 'guessFestival', label: 'Mera favorite festival?', type: 'text', placeholder: 'Colors or Lights?', options: ['Diwali', 'Holi', 'Eid', 'Valentine day'], emoji: '🎆' },
+  { id: 'guessDestination', label: 'Mai tere saath kaha jaana chahta hu?', type: 'text', placeholder: 'Dream place...', options: ['Delhi', 'Vrindaavan', 'Mathura', 'Puri'], emoji: '✈️' },
   { id: 'aboutMe', label: 'Finally, tell me something sweet about me', type: 'textarea', placeholder: 'Pour your heart out...', emoji: '✍️' }
 ];
 
@@ -510,7 +510,7 @@ const App: React.FC = () => {
                 {isLoadingPoem ? (
                   <div className="flex flex-col items-center gap-4 py-8">
                     <div className="w-12 h-12 border-4 border-pink-500 border-t-transparent rounded-full animate-spin"></div>
-                    <p className="font-sans text-lg not-italic">Writing our love story with Gemini... 🖋️</p>
+                    <p className="font-sans text-lg not-italic">I have Something for you</p>
                   </div>
                 ) : (
                   romanticPoem.split('\n').map((line, i) => (
